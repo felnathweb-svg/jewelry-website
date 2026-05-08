@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxeGem - Fine Jewelry</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon"><i class="fas fa-gem"></i></span>
+      <span class="logo-text">LuxeGem</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#categories">Collections</a></li>
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <i class="fas fa-search" id="searchIcon"></i>
+      <i class="fas fa-heart" id="wishlistIcon"></i>
+      <i class="fas fa-shopping-bag" id="cartIcon">
+        <span class="cart-count" id="cartCount">0</span>
+      </i>
+      <i class="fas fa-bars" id="menuToggle"></i>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">New Collection 2025</p>
+      <h1 class="hero-title">Timeless Beauty,<br />Crafted in Gold</h1>
+      <p class="hero-desc">Discover our exclusive handcrafted jewelry collection. Each piece tells a story of elegance and artistry.</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+        <a href="#about" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- MARQUEE BANNER -->
+  <div class="marquee-banner">
+    <div class="marquee-track">
+      <span>Free Shipping on Orders Over $99</span>
+      <span class="dot">&#9679;</span>
+      <span>Handcrafted Fine Jewelry</span>
+      <span class="dot">&#9679;</span>
+      <span>Certified Authentic Gemstones</span>
+      <span class="dot">&#9679;</span>
+      <span>30-Day Returns</span>
+      <span class="dot">&#9679;</span>
+      <span>Free Shipping on Orders Over $99</span>
+      <span class="dot">&#9679;</span>
+      <span>Handcrafted Fine Jewelry</span>
+      <span class="dot">&#9679;</span>
+      <span>Certified Authentic Gemstones</span>
+      <span class="dot">&#9679;</span>
+      <span>30-Day Returns</span>
+      <span class="dot">&#9679;</span>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="section-header">
+      <p class="section-subtitle">Browse By</p>
+      <h2 class="section-title">Our Collections</h2>
+    </div>
+    <div class="categories-grid">
+      <div class="category-card">
+        <div class="category-img">
+          <img src="images/categories/rings.jpg" alt="Rings" loading="lazy" />
+          <div class="category-overlay"><span>Shop Now</span></div>
+        </div>
+        <div class="category-info">
+          <h3>Rings</h3>
+          <p>48 Items</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-img">
+          <img src="images/categories/necklaces.jpg" alt="Necklaces" loading="lazy" />
+          <div class="category-overlay"><span>Shop Now</span></div>
+        </div>
+        <div class="category-info">
+          <h3>Necklaces</h3>
+          <p>36 Items</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-img">
+          <img src="images/categories/earrings.jpg" alt="Earrings" loading="lazy" />
+          <div class="category-overlay"><span>Shop Now</span></div>
+        </div>
+        <div class="category-info">
+          <h3>Earrings</h3>
+          <p>52 Items</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-img">
+          <img src="images/categories/bracelets.jpg" alt="Bracelets" loading="lazy" />
+          <div class="category-overlay"><span>Shop Now</span></div>
+        </div>
+        <div class="category-info">
+          <h3>Bracelets</h3>
+          <p>29 Items</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="section-header">
+      <p class="section-subtitle">Handpicked For You</p>
+      <h2 class="section-title">Featured Products</h2>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="rings">Rings</button>
+      <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+      <button class="filter-btn" data-filter="earrings">Earrings</button>
+      <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <!-- Products injected by JS -->
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="promo-banner">
+    <div class="promo-content">
+      <p class="promo-tag">Limited Offer</p>
+      <h2>Get 20% Off Your First Order</h2>
+      <p>Use code <strong>LUXE20</strong> at checkout</p>
+      <a href="#products" class="btn btn-light">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-image">
+      <img src="images/about.jpg" alt="Elegant woman wearing gold jewelry" />
+    </div>
+    <div class="about-content">
+      <p class="section-subtitle">Our Story</p>
+      <h2 class="section-title">Crafting Dreams Since 1998</h2>
+      <p>At LuxeGem, every piece of jewelry is more than an accessory — it's a memory, a milestone, a statement. Our master craftsmen pour passion and precision into every creation.</p>
+      <ul class="about-features">
+        <li><i class="fas fa-check-circle"></i> 100% Certified Gemstones</li>
+        <li><i class="fas fa-check-circle"></i> Handcrafted by Expert Artisans</li>
+        <li><i class="fas fa-check-circle"></i> Lifetime Warranty on All Products</li>
+        <li><i class="fas fa-check-circle"></i> Sustainable & Ethical Sourcing</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-header">
+      <p class="section-subtitle">What Clients Say</p>
+      <h2 class="section-title">Customer Reviews</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"The ring I ordered was absolutely stunning. The craftsmanship is beyond compare. I'll definitely be ordering again!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">S</div>
+          <div><strong>Sarah M.</strong><span>Verified Buyer</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"My necklace arrived beautifully packaged. The gold quality is exceptional and it looks even better in person!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">A</div>
+          <div><strong>Amelia J.</strong><span>Verified Buyer</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p>"I gifted this bracelet to my mother and she cried with joy. Worth every penny. Thank you LuxeGem!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">R</div>
+          <div><strong>Riya K.</strong><span>Verified Buyer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <p class="section-subtitle">Reach Us</p>
+      <h2 class="section-title">Contact Us</h2>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><strong>Address</strong><p>123 Diamond Lane, Gem City, GC 45678</p></div></div>
+        <div class="info-item"><i class="fas fa-phone"></i><div><strong>Phone</strong><p>+1 (800) 555-LUXE</p></div></div>
+        <div class="info-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><p>hello@luxegem.com</p></div></div>
+        <div class="info-item"><i class="fas fa-clock"></i><div><strong>Hours</strong><p>Mon–Sat: 9am – 7pm</p></div></div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-success" id="formSuccess">Message sent! We'll be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <!-- Gold accent line -->
+    <div class="footer-accent"></div>
+
+    <!-- Pre-footer brand strip -->
+    <div class="footer-brand-strip">
+      <div class="footer-logo-wrap">
+        <div class="footer-logo-icon"><i class="fas fa-gem"></i></div>
+        <div class="footer-logo-text">
+          <span class="footer-logo-name">LuxeGem</span>
+          <span class="footer-logo-tagline">Fine Jewelry Since 1998</span>
+        </div>
+      </div>
+      <p class="footer-brand-desc">Crafting timeless jewelry for life's most precious moments.<br/>Every piece, a story. Every gem, a promise.</p>
+      <div class="footer-trust-badges">
+        <div class="trust-badge"><i class="fas fa-certificate"></i><span>Certified Gems</span></div>
+        <div class="trust-badge"><i class="fas fa-shield-alt"></i><span>Lifetime Warranty</span></div>
+        <div class="trust-badge"><i class="fas fa-leaf"></i><span>Ethical Sourcing</span></div>
+        <div class="trust-badge"><i class="fas fa-shipping-fast"></i><span>Free Shipping</span></div>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <!-- Main footer grid -->
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 class="footer-heading">Follow Us</h4>
+        <p class="footer-col-desc">Stay connected for new arrivals, behind-the-scenes, and exclusive offers.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-list">
+          <li><a href="#home"><i class="fas fa-chevron-right"></i>Home</a></li>
+          <li><a href="#categories"><i class="fas fa-chevron-right"></i>Collections</a></li>
+          <li><a href="#products"><i class="fas fa-chevron-right"></i>Shop</a></li>
+          <li><a href="#about"><i class="fas fa-chevron-right"></i>About Us</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Categories</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="fas fa-chevron-right"></i>Rings</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i>Necklaces</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i>Earrings</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i>Bracelets</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i>Gift Sets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="footer-col-desc">Get 10% off your first order when you subscribe.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter your email" />
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+        <div class="footer-contact-mini">
+          <p><i class="fas fa-envelope"></i> hello@luxegem.com</p>
+          <p><i class="fas fa-phone"></i> +1 (800) 555-LUXE</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer bottom bar -->
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 <span>LuxeGem</span>. All rights reserved.</p>
+      <div class="footer-payment">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fab fa-apple-pay"></i>
+      </div>
+      <p class="footer-legal"><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></p>
+    </div>
+
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <i class="fas fa-times" id="closeCart"></i>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <strong id="cartTotal">$0.00</strong></div>
+      <button class="btn btn-primary" style="width:100%">Checkout</button>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
